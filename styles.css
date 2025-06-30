@@ -1,0 +1,153 @@
+@font-face {
+  font-family: outfit;
+  src: url(recipe-page-main/assets/fonts/outfit/Outfit-VariableFont_wght.ttf);
+}
+
+@font-face {
+  font-family: YoungSerif;
+  src: url(recipe-page-main/assets/fonts/young-serif/YoungSerif-Regular.ttf);
+}
+
+.container-1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+body {
+  background-color: #f3e5d8;
+  font-family: outfit;
+}
+
+p {
+  margin: 0;
+}
+
+.main-body {
+  margin-top: 60px;
+  background-color: #ffff;
+  border-radius: 15px;
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+  max-width: 660px;
+}
+.image {
+  width: 100%;
+  border-radius: 15px;
+}
+
+.title {
+  font-family: youngSerif;
+  font-size: 42px;
+  color: #31302c;
+  margin: 20px 0 10px 0;
+}
+
+.content {
+  color: #6a605f;
+  font-size: 16px;
+}
+
+.preparation {
+  color: #31302c;
+  line-height: 30px;
+  background-color: hsl(330, 100%, 98%);
+  padding: 15px 15px 15px 30px;
+  border-radius: 15px;
+  margin-top: 25px;
+}
+
+.preparation ul li::marker {
+  color: hsl(332, 51%, 32%);
+}
+
+.preparation-title {
+  color: hsl(332, 51%, 32%);
+  font-size: 18px;
+}
+
+ul {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+ul li {
+  margin-left: -15px;
+  padding-left: 15px;
+  color: #6a605f;
+}
+
+ul li::marker {
+  color: #844732;
+}
+
+.subtitle {
+  font-family: youngSerif;
+  color: #844732;
+  font-size: 28px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.Ingredients-list {
+  line-height: 30px;
+}
+
+hr {
+  width: 100%;
+  border: none;
+  height: 1px;
+  background: #e0e0e0;
+}
+
+ol li {
+  color: #6a605f;
+  margin-left: -15px;
+  padding-left: 20px;
+}
+
+ol li::marker {
+  color: #844732;
+  font-family: outfit;
+  font-weight: bold;
+}
+
+table,
+tr,
+td {
+  border-bottom: solid 1px;
+  border-color: #e0e0e0;
+  padding: 15px 0 15px 15px;
+  color: #6a605f;
+}
+
+table {
+  border-bottom: none;
+}
+
+.nutritional-values {
+  color: #844732;
+  font-weight: bold;
+}
+
+table tr:last-child td {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+@media (max-width: 725px) {
+  body {
+    margin: 0;
+    padding: 0;
+  }
+
+  .main-body {
+    margin: 0;
+    border-radius: 0;
+  }
+
+  .image {
+    border-radius: 0;
+  }
+}
